@@ -54,26 +54,27 @@ function falses(){
     let AcbSelected = document.getElementById("Acb").checked;
     let AdcSelected = document.getElementById("Adc").checked;
 
-    if(AbaSelected){
-        falseAnswer.innerHTML =  " you got it right " + fname + " i like to not get injured every day"
-    }
-    else if (AcbSelected) {
-        falseAnswer.innerHTML =  " i have done rock climbing " + fname + " good try though"
+    // if(AbaSelected){
+    //     falseAnswer.innerHTML =  " you got it right " + fname + " i like to not get injured every day"
+    // }
+    // else if (AcbSelected) {
+    //     falseAnswer.innerHTML =  " i have done rock climbing " + fname + " good try though"
 
-    }
-    else if (AdcSelected) {
-        falseAnswer.innerHTML =  " i am in the middle of driving school " + fname
-    }
+    // }
+    // else if (AdcSelected) {
+    //     falseAnswer.innerHTML =  " i am in the middle of driving school " + fname
+    // }
 
 
-    else if (Adc-AbaSelected) {
+    // else
+     if (AdcSelected && AbaSelected) {
         falseAnswer.innerHTML =  " one correct " + fname
     }
-    else if (Adc-AcbSelected) {
+    else if (AdcSelected && AcbSelected) {
         falseAnswer.innerHTML =  " both are true " + fname
     }
 
-    else if (Acb-AbaSelected) {
+    else if (AcbSelected && AbaSelected) {
         falseAnswer.innerHTML =  " one correct " + fname
     }
 }
